@@ -1,5 +1,5 @@
 module bank {
-  import basicSpells.* from "../spells/basicSpells"
+  import basicSpells.* from "spells/basicSpells"
 
   type Investment = { owner: str, amount: int }
 
