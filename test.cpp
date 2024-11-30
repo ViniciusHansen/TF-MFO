@@ -71,7 +71,7 @@ BankState bank_state_from_json(json state) {
 
 int main() {
     ofstream output_file("saida.txt");
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 10000; i++) {
         output_file << "Trace #" << i << endl;
         std::ifstream f("traces/out" + to_string(i) + ".itf.json");
         json data = json::parse(f);
