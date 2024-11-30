@@ -141,6 +141,7 @@ int main() {
                 string(state["error"]["tag"]).compare("Some") == 0
                     ? state["error"]["value"]
                     : "";
+            
 
             if (expected_error != error) {
                 cout << "Erro fora do esperado:" << endl;
