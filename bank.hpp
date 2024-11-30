@@ -63,9 +63,10 @@ string sell_investment(BankState &bank_state, string seller,
 
   if ( !bank_state.investments.count(investment_id) )
     return "No investment with this id";
-    
+
+  bank_state.balances[seller] += bank_state.investments[investment_id].amount;    
   bank_state.investments.erase(investment_id);
-  bank_state.balances[seller] += bank_state.investments[investment_id].amount;
+
   return "";
 }
 
