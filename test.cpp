@@ -143,6 +143,7 @@ int main() {
                 string(state["error"]["tag"]).compare("Some") == 0
                     ? state["error"]["value"]
                     : "";
+            
 
             if (expected_error != error) {
                 output_file << "--- Erro: Erro inconsistente ---" << endl;
