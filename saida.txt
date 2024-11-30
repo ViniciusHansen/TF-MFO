@@ -1,0 +1,758 @@
+Trace #0
+initializing
+Trace #1
+initializing
+Trace #2
+initializing
+Trace #3
+initializing
+Trace #4
+initializing
+Trace #5
+initializing
+Trace #6
+initializing
+Trace #7
+initializing
+Trace #8
+initializing
+Trace #9
+initializing
+Trace #10
+initializing
+Trace #11
+initializing
+Trace #12
+initializing
+Trace #13
+initializing
+Trace #14
+initializing
+Trace #15
+initializing
+Trace #16
+initializing
+Trace #17
+initializing
+Trace #18
+initializing
+Trace #19
+initializing
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 2
+    Bob: 0
+    Charlie: 119
+  Investments:
+    0: Investment{owner: Charlie, amount: 67}
+  Next ID: 2
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 2
+    Bob: 0
+    Charlie: 119
+  Investments:
+    0: Investment{owner: Charlie, amount: 67}
+    1: Investment{owner: Charlie, amount: 53}
+  Next ID: 2
+}
+Última ação tomada: sell_investment_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 2
+    Bob: 0
+    Charlie: 119
+  Investments:
+    0: Investment{owner: Charlie, amount: 67}
+  Next ID: 2
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 2
+    Bob: 0
+    Charlie: 119
+  Investments:
+    0: Investment{owner: Charlie, amount: 67}
+    1: Investment{owner: Charlie, amount: 53}
+  Next ID: 2
+}
+Última ação tomada: deposit_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 2
+    Bob: 0
+    Charlie: 119
+  Investments:
+    0: Investment{owner: Charlie, amount: 67}
+  Next ID: 2
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 2
+    Bob: 0
+    Charlie: 119
+  Investments:
+    0: Investment{owner: Charlie, amount: 67}
+    1: Investment{owner: Charlie, amount: 53}
+  Next ID: 2
+}
+Última ação tomada: sell_investment_action
+
+Trace #20
+initializing
+Trace #21
+initializing
+Trace #22
+initializing
+Trace #23
+initializing
+Trace #24
+initializing
+Trace #25
+initializing
+Trace #26
+initializing
+Trace #27
+initializing
+Trace #28
+initializing
+Trace #29
+initializing
+Trace #30
+initializing
+Trace #31
+initializing
+Trace #32
+initializing
+Trace #33
+initializing
+Trace #34
+initializing
+Trace #35
+initializing
+Trace #36
+initializing
+Trace #37
+initializing
+Trace #38
+initializing
+Trace #39
+initializing
+Trace #40
+initializing
+Trace #41
+initializing
+Trace #42
+initializing
+Trace #43
+initializing
+Trace #44
+initializing
+Trace #45
+initializing
+Trace #46
+initializing
+Trace #47
+initializing
+Trace #48
+initializing
+Trace #49
+initializing
+Trace #50
+initializing
+Trace #51
+initializing
+Trace #52
+initializing
+Trace #53
+initializing
+Trace #54
+initializing
+Trace #55
+initializing
+Trace #56
+initializing
+Trace #57
+initializing
+Trace #58
+initializing
+Trace #59
+initializing
+Trace #60
+initializing
+Trace #61
+initializing
+Trace #62
+initializing
+Trace #63
+initializing
+Trace #64
+initializing
+Trace #65
+initializing
+Trace #66
+initializing
+Trace #67
+initializing
+Trace #68
+initializing
+Trace #69
+initializing
+Trace #70
+initializing
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 0
+    Bob: 41
+    Charlie: 92
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 0
+    Bob: 41
+    Charlie: 92
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: sell_investment_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: deposit_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: sell_investment_action
+
+--- Erro: Erro inconsistente ---
+Erro esperado: No investment with this id
+Erro obtido: Seller can't sell an investment they don't own
+Última ação tomada: sell_investment_action
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+  Next ID: 1
+}
+Estado do banco:
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: transfer_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: withdraw_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 92
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: sell_investment_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 20
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 30
+    Bob: 41
+    Charlie: 20
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: withdraw_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: deposit_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: sell_investment_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: transfer_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: withdraw_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 52
+    Bob: 41
+    Charlie: 20
+  Investments:
+    0: Investment{owner: Charlie, amount: 37}
+  Next ID: 1
+}
+Última ação tomada: buy_investment_action
+
+Trace #71
+initializing
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 36
+    Bob: 0
+    Charlie: 0
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 36
+    Bob: 0
+    Charlie: 0
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: sell_investment_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 36
+    Bob: 0
+    Charlie: 0
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 36
+    Bob: 0
+    Charlie: 0
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: withdraw_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 4
+    Bob: 32
+    Charlie: 0
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 4
+    Bob: 32
+    Charlie: 0
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: transfer_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 4
+    Bob: 27
+    Charlie: 0
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 4
+    Bob: 27
+    Charlie: 0
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: withdraw_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 4
+    Bob: 27
+    Charlie: 0
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 4
+    Bob: 27
+    Charlie: 0
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: withdraw_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 3
+    Bob: 28
+    Charlie: 0
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 3
+    Bob: 28
+    Charlie: 0
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: transfer_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 3
+    Bob: 28
+    Charlie: 27
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 3
+    Bob: 28
+    Charlie: 27
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: deposit_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 3
+    Bob: 28
+    Charlie: 27
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 3
+    Bob: 28
+    Charlie: 27
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: transfer_action
+
+--- Erro: Estado do banco inconsistente ---
+Estado do modelo: 
+BankState{
+  Balances:
+    Alice: 3
+    Bob: 28
+    Charlie: 27
+  Investments:
+  Next ID: 1
+}
+Estado do banco: 
+BankState{
+  Balances:
+    Alice: 3
+    Bob: 28
+    Charlie: 27
+  Investments:
+    0: Investment{owner: Alice, amount: 31}
+  Next ID: 1
+}
+Última ação tomada: withdraw_action
+
+Trace #72
+initializing
+Trace #73
+initializing
+Trace #74
+initializing
+Trace #75
+initializing
+Trace #76
+initializing
+Trace #77
+initializing
+Trace #78
+initializing
+Trace #79
+initializing
+Trace #80
+initializing
+Trace #81
+initializing
+Trace #82
+initializing
+Trace #83
+initializing
+Trace #84
+initializing
+Trace #85
+initializing
+Trace #86
+initializing
+Trace #87
+initializing
+Trace #88
+initializing
+Trace #89
+initializing
+Trace #90
+initializing
+Trace #91
+initializing
+Trace #92
+initializing
+Trace #93
+initializing
+Trace #94
+initializing
+Trace #95
+initializing
+Trace #96
+initializing
+Trace #97
+initializing
+Trace #98
+initializing
+Trace #99
+initializing

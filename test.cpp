@@ -5,11 +5,11 @@
 #include <nlohmann/json.hpp>
 #include <string>
 #include <unordered_map>
-
 #include "bank.hpp"
 
 using json = nlohmann::json;
 using namespace std;
+
 
 enum class Action {
     Init,
@@ -70,8 +70,9 @@ BankState bank_state_from_json(json state) {
 }
 
 int main() {
-    for (int i = 0; i < 1000; i++) {
-        cout << "Trace #" << i << endl;
+    ofstream output_file("saida.txt");
+    for (int i = 0; i < 100; i++) {
+        output_file << "Trace #" << i << endl;
         std::ifstream f("traces/out" + to_string(i) + ".itf.json");
         json data = json::parse(f);
 
@@ -88,7 +89,7 @@ int main() {
 
             switch (stringToAction(action)) {
             case Action::Init: {
-                cout << "initializing" << endl;
+                output_file << "initializing" << endl;
                 break;
             }
             case Action::Deposit: {
@@ -131,10 +132,11 @@ int main() {
             BankState expected_bank_state =
                 bank_state_from_json(state["bank_state"]);
             if (expected_bank_state != bank_state) {
-                cout << "Estado do banco diferente do esperado:" << endl;
-                cout << "Estado esperado: " << expected_bank_state << endl;
-                cout << "Estado obtido: " << bank_state << endl;
-                cout << endl << endl;
+                output_file << "--- Erro: Estado do banco inconsistente ---" << endl;
+                output_file << "Estado do modelo: " << endl << expected_bank_state << endl;
+                output_file << "Estado do banco: " << endl << bank_state << endl;
+                output_file << "Última ação tomada: " << action; 
+                output_file << endl << endl;
             }
 
             string expected_error =
@@ -143,12 +145,16 @@ int main() {
                     : "";
 
             if (expected_error != error) {
-                cout << "Erro fora do esperado:" << endl;
-                cout << "Erro esperado: " << expected_error << endl;
-                cout << "Erro obtido: " << error << endl;
-                cout << endl << endl;
+                output_file << "--- Erro: Erro inconsistente ---" << endl;
+                output_file << "Erro esperado: " << expected_error << endl;
+                output_file << "Erro obtido: " << error << endl;
+                output_file << "Última ação tomada: " << action << endl;
+                output_file << "Estado do modelo: " << endl << expected_bank_state << endl;
+                output_file << "Estado do banco:" << endl << bank_state;
+                output_file << endl << endl;
             }
         }
     }
+    output_file.close();
     return 0;
 }

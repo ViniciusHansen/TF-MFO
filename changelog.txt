@@ -10,3 +10,5 @@ string deposit(BankState &bank_state, string depositor, int amount) {
       return "";
   }
 }
+
+- Vendendo investimentos que não existem
